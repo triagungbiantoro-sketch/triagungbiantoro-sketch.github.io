@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Aplikasi modern untuk produktivitas dan efisiensi.">
+  <title>Techtrilabs - Solusi Aplikasi Profesional</title>
+  
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2E6WS9DEKR"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-2E6WS9DEKR');
+</script>
+
+  <style>
+    /* Reset sederhana */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      line-height: 1.6;
+      color: #333;
+    }
+
+    /* Header dan Navbar Sticky */
+    header {
+      position: sticky;
+      top: 0;
+      background: #4f46e5;
+      color: white;
+      z-index: 1000;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      transition: all 0.3s ease;
+    }
+
+    .nav-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .logo-container {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .logo-container img {
+      width: 50px;
+      height: 50px;
+      object-fit: contain;
+      border-radius: 10px;
+    }
+
+    .logo-container h1 {
+      font-size: 1.8rem;
+    }
+
+    nav {
+      display: flex;
+      gap: 20px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 5px 10px;
+      border-radius: 5px;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    nav a:hover {
+      background: #3730a3;
+      color: #fff;
+    }
+
+    /* Hero Section */
+    .hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 120px 20px 60px 20px; /* padding-top lebih tinggi karena sticky header */
+      background: #e0e7ff;
+      text-align: center;
+      transition: padding 0.3s;
+    }
+
+    .hero h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      max-width: 600px;
+      margin-bottom: 30px;
+    }
+
+    .hero a {
+      text-decoration: none;
+      background: #4f46e5;
+      color: white;
+      padding: 12px 30px;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .hero a:hover {
+      background: #3730a3;
+    }
+
+    /* Features Section */
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 50px 20px;
+      background: #f9fafb;
+    }
+
+    .feature-card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      padding: 30px;
+      flex: 1 1 250px;
+      max-width: 300px;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+
+    .feature-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .feature-card h3 {
+      margin-bottom: 15px;
+      color: #4f46e5;
+    }
+
+    /* Footer */
+    footer {
+      background: #1f2937;
+      color: white;
+      text-align: center;
+      padding: 20px 10px;
+    }
+
+    footer a {
+      color: #c7d2fe;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .features {
+        flex-direction: column;
+        align-items: center;
+      }
+      .nav-container {
+        flex-direction: column;
+        gap: 10px;
+      }
+      .logo-container {
+        justify-content: center;
+      }
+      nav {
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+    }
+  </style>
+  
+</head>
+<body>
+  <header>
+    <div class="nav-container">
+      <div class="logo-container">
+        <img src="https://raw.githubusercontent.com/triagungbiantoro-sketch/TechTriLabs/main/logo3.png" alt="Techtrilabs Logo">
+        <h1>Techtrilabs</h1>
+      </div>
+      <nav>
+        <a href="#features">Fitur</a>
+        <a href="#download">Unduh</a>
+        <a href="https://triagungbiantoro-sketch.github.io/TechTriLabs/contact.html">Kontak</a>
+        <a href="https://triagungbiantoro-sketch.github.io/TechTriLabs/privacy.html">Kebijakan Privasi</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <h2>Transformasikan Cara Anda Bekerja</h2>
+    <p>Techtrilabs Apps membantu meningkatkan efisiensi tim dan produktivitas kerja dengan sistem yang mudah digunakan dan modern.</p>
+    <a href="https://www.funprogramming.cloud/p/tech-tri-labs.html">Mulai Sekarang</a>
+  </section>
+
+  <section id="features" class="features">
+    <div class="feature-card">
+      <h3>Manajemen Proyek</h3>
+      <p>Atur semua proyek Anda dengan dashboard yang intuitif dan mudah dipantau.</p>
+    </div>
+    <div class="feature-card">
+      <h3>Kolaborasi Tim</h3>
+      <p>Berkomunikasi dan berbagi file dengan tim secara real-time tanpa hambatan.</p>
+    </div>
+    <div class="feature-card">
+      <h3>Laporan & Analisis</h3>
+      <p>Dapatkan insight mendalam dari data bisnis Anda dalam hitungan detik.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Techtrilabs. All rights reserved. | <a href="https://triagungbiantoro-sketch.github.io/TechTriLabs/contact.html">Kontak Kami</a></p>
+  </footer>
+</body>
+</html>
