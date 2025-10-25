@@ -188,6 +188,71 @@
         flex-wrap: wrap;
       }
     }
+
+    .app-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.app-card {
+  flex: 1 1 calc(25% - 20px);
+  max-width: calc(25% - 20px);
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 16px;
+  padding: 15px;
+  box-sizing: border-box;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+.app-card:hover {
+  transform: translateY(-5px);
+}
+
+.app-card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+
+.app-card h3 {
+  font-size: 16px;
+  margin: 10px 0 5px;
+}
+
+.app-card p {
+  font-size: 14px;
+  margin: 0 0 10px;
+}
+
+.app-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.app-buttons a {
+  flex: 1;
+  min-width: 80px;
+  padding: 6px 12px;
+  background: #007bff;
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 14px;
+  text-align: center;
+}
+.app-buttons a.review {
+  background: #28a745; /* hijau untuk review */
+}
+.app-buttons a:hover {
+  opacity: 0.9;
+}
   </style>
   
 </head>
@@ -214,6 +279,41 @@
   </section>
 
   <section id="features" class="features">
+    <div class="app-grid">
+
+  <div class="app-card">
+    <img alt="Quantacalc" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgl6SrwNDYrIVPBdw3TVgD3bZx5rQXf5pOMzkpZ7vlbkq7iZ9BJ8VrSBtnNaTgAGof7dIeFfHMutvaolI1CUFP8F3faDaRP8viuMA5JfMnq5cAQj24cUIwRgALXLlRL5sFsUqxYPmzBGgHYIt7CDYwej1gkWKDw_TBAbIKi8JNZOZ23O5d4h8EODC_XLlBO/s320/logo.png" />
+    <h3>Quantacalc</h3>
+    <p>A simple calculator with a unique interface and results up to 9 decimals.</p>
+    <div class="app-buttons">
+      <a href="https://id.uptodown.com/calc" target="_blank">Download</a>
+      <a class="review" href="https://www.funprogramming.cloud/2025/09/quantacalc-fun-and-cute-calculator-for.html" target="_blank">Review</a>
+    </div>
+  </div>
+
+  <div class="app-card">
+    <img alt="App 2" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjmdnTo8DOPM1AvW1tOYcIu-rYdzl8EcLV6OTMxN3jaT5vz6QEFsZZo2pswVKn-wuN5I9BIVGSRYVuv2pdvOkEkdw0uL2DUlrxdcapwawHoWCWzVttCMkCKrSeNH95thE7zQelvDG8JtpUpjgbWSHtU1-YseolZy_-VlAZ9472FbUCOxSUZiIjsVuSA9ai1/w216-h467/photo_2025-09-12_20-16-08.jpg" />
+    <h3>FamFinPlan</h3>
+    <p>FamFinPlan is an all-in-one app to help families easily manage finances, schedules, events, and even vehicle maintenance. With a modern interface and comprehensive features, FamFinPlan ensures all financial activities and management are more organized, transparent, and practical.</p>
+    <div class="app-buttons">
+      <a href="https://www.funprogramming.cloud/2025/09/famfinplan_12.html" target="_blank">Download</a>
+      <a class="review" href="https://www.funprogramming.cloud/2025/09/famfinplan_12.html" target="_blank">Review</a>
+    </div>
+  </div>
+  
+    <div class="app-card">
+    <img alt="App 2" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhDETRCRAkakjoIj81PNPgs9z8I4yctqPccn-VFL5OFuaZ_HL1MduUxpYmbwlVZpumf5gs_BvX_RplTh28G8DVUPCpS3TwJQhtPbuWBhCTmp4UhRhlD8GIdygRKQ2Ld0sl5oQDksXlxM9-jUKvFlvd1f82oSpCckz8ImhUQFtadCUIOLk1LtV_usIx91e_b/w180-h180/logo.png" />
+    <h3>CatatBisnis TTL</h3>
+    <p>The CatatBisnis app is designed to help SMEs manage their daily business activities in a practical and efficient way. All record-keeping is done digitally, minimizing manual errors and making it easier to monitor finances and product stock.</p>
+    <div class="app-buttons">
+      <a href="https://www.funprogramming.cloud/2025/09/catatbisnis-ttl_15.html">Download</a>
+      <a class="review" href="https://www.funprogramming.cloud/2025/09/catatbisnis-ttl_15.html" target="_blank">Review</a>
+    </div>
+  </div>
+ 
+
+</div>
+
     <div class="feature-card">
       <h3>Manajemen Proyek</h3>
       <p>Atur semua proyek Anda dengan dashboard yang intuitif dan mudah dipantau.</p>
