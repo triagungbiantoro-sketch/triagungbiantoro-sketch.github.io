@@ -1,4 +1,23 @@
 User-agent: *
 Allow: /
 
+# Blokir folder yang tidak perlu diindeks
+Disallow: /assets/
+Disallow: /css/
+Disallow: /js/
+Disallow: /images/icons/
+Disallow: /drafts/
+Disallow: /private/
+Disallow: /tmp/
+
+# Hindari duplikasi jika ada parameter
+Disallow: /*?
+Disallow: /*.json$
+Disallow: /*.xml$
+
+# Izinkan file penting
+Allow: /assets/images/
+Allow: /images/
+
+# Sitemap
 Sitemap: https://triagungbiantoro-sketch.github.io/sitemap.xml
